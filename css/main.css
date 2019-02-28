@@ -60,7 +60,6 @@ header {
 	color: #ffffff8f;
   margin: 0;
   display: inline;
-
 }
 
 .logo > p > span {
@@ -150,5 +149,92 @@ header {
 }
 
 .social {
-	
+	margin: 0;
+  color: white;
+  list-style: none;
+  padding: 0;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.social > li {
+	display: inline-block;
+	margin-right: 10px;
+	opacity: .3;
+}
+
+.social > li:hover {
+	opacity: 1;
+}
+
+.social > li:last-child {
+	margin-right: 0;
+}
+
+.social > li > a > img {
+	height: 15px;
+}
+
+#features {
+	background-color: #efefef;
+	padding-top: 75px;
+	text-align: center;
+	padding: 75px 100px 110px 100px;
+}
+
+#features > h1 {
+	margin: 0;
+	color: #4c76ff;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+#features > span::before {
+	content: '';
+	display: inline-block;
+	width: 90px;
+	border-top: 1px solid #d7dadc;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+#features > span::after {
+	content: '';
+	display: inline-block;
+	width: 90px;
+	border-top: 1px solid #d7dadc;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.steps {
+	margin-top: 70px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.step {
+	text-align: left;
+	width: 30%;
+}
+
+.step > span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #4c76ff;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: top;
+}
+
+.step > span > img {
+	vertical-align: -webkit-baseline-middle;
+}
+
+.step-text {
+  display: inline-block;
+  width: calc(100% - 40px);
 }
