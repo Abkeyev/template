@@ -176,7 +176,8 @@ header {
 }
 
 #features,
-#works {
+#works,
+#team {
 	background-color: #efefef;
 	padding-top: 75px;
 	text-align: center;
@@ -184,7 +185,8 @@ header {
 }
 
 #features > h1,
-#works > h1 {
+#works > h1,
+#team > h1 {
 	margin: 0;
 	color: #4c76ff;
 	text-transform: uppercase;
@@ -192,7 +194,8 @@ header {
 }
 
 #features > span::before,
-#works > span::before {
+#works > span::before,
+#team > span::before {
 	content: '';
 	display: inline-block;
 	width: 90px;
@@ -202,7 +205,8 @@ header {
 }
 
 #features > span::after,
-#works > span::after {
+#works > span::after,
+#team > span::after {
 	content: '';
 	display: inline-block;
 	width: 90px;
@@ -323,7 +327,8 @@ header {
 	background-color: #fff;
 }
 
-#works > p {
+#works > p,
+#team > p {
 	margin: 40px 0 60px 0;
 	padding: 0 100px;
 	font-size: 14px;
@@ -407,4 +412,98 @@ header {
 .work-items > div > div > p {
 	font-size: 10px;
 	margin: 0;
+}
+
+#team {
+	background-color: #fff;
+}
+
+.team-members {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-family: 'Open sans', sans-serif;
+}
+
+.team-member {
+	width: 23%;
+}
+
+.team-member > h1 {
+	margin: 15px 0;
+	font-size: 15px;
+	color: #062033;
+}
+
+.team-member > h2 {
+	margin: 0;
+	font-size: 11px;
+	font-weight: normal;
+	color: #062033;
+	opacity: 0.5;
+}
+
+.team-member > div {
+	position: relative;
+}
+
+.team-member > div > img {
+	width: 100%;
+}
+
+.team-member > div > div {
+	display: block;
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+.team-member > div:hover > div {
+	opacity: 1;
+}
+
+.team-member:hover > h1 {
+	color: #0eb493;
+}
+
+.team-member > div > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  background-color: rgba(76, 118, 255, .9);
+  color: white;
+	padding: 0 10px;
+}
+
+.team-member > div > div > h1 {
+	margin: 20px 0 10px 0;
+	font-size: 13px;
+}
+
+.team-member > div > div > p {
+	font-size: 13px;
+	margin: 0 0 50px 0;
+	font-weight: 100;
+}
+
+.team-member > div > div > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.team-member > div > div > ul > li {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color: rgba(0,0,0,.3);
+	vertical-align: top;
+}
+
+.team-member > div > div > ul > li > a {
+	display: block;
+	padding: 8px 0;
+	width: 100%;
+	height: 100%;
 }
