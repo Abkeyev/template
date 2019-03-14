@@ -177,7 +177,8 @@ header {
 
 #features,
 #works,
-#team {
+#team,
+#form {
 	background-color: #efefef;
 	padding-top: 75px;
 	text-align: center;
@@ -186,7 +187,8 @@ header {
 
 #features > h1,
 #works > h1,
-#team > h1 {
+#team > h1,
+#form > h1 {
 	margin: 0;
 	color: #4c76ff;
 	text-transform: uppercase;
@@ -195,7 +197,9 @@ header {
 
 #features > span::before,
 #works > span::before,
-#team > span::before {
+#team > span::before,
+#facts > span::before,
+#form > span::before {
 	content: '';
 	display: inline-block;
 	width: 90px;
@@ -206,7 +210,9 @@ header {
 
 #features > span::after,
 #works > span::after,
-#team > span::after {
+#team > span::after,
+#facts > span::after,
+#form > span::after {
 	content: '';
 	display: inline-block;
 	width: 90px;
@@ -507,3 +513,100 @@ header {
 	width: 100%;
 	height: 100%;
 }
+
+#facts {
+	position: relative;
+	background: url('../img/bg-numbers.png') no-repeat;
+	background-size: cover;
+	padding: 75px 0 120px 0;
+
+}
+
+#facts > h1 {
+	position: relative;
+	font-family: 'Lato', sans-serif;
+	font-size: 21px;
+	color: #4c76ff;
+	margin: 0 0 15px 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#facts > span {
+	position: relative;
+	display: block;
+	text-align: center;
+}
+
+#facts > span::before,
+#facts > span::after {
+	width: 60px;
+}
+
+.overlay {
+	position: absolute;
+	background-color: #062033;
+	opacity: .8;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+.numbers {
+	display: flex;
+	position: relative;
+	color: white;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 150px;
+	margin-top: 20px;
+}
+
+.numbers > div {
+	text-align: center;
+}
+
+.numbers > div > span {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border: 2px solid rgba(255,255,255,0.5);
+	border-radius: 50%;
+}
+
+.numbers > div > span > img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.numbers > div > h1 {
+	font-family: 'Open Sans', sans-serif;
+	margin: 35px 0 15px 0;
+	font-size: 45px;
+	font-weight: 400;
+}
+
+.numbers > div > h2 {
+	margin: 0;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#form {
+	background-color: #fff;
+}
+
+#form > p {
+	font-family: 'Lato'
+	text-align: center;
+	color: #062033;
+	margin: 50px 0 70px 0;
+	opacity: .8;
+}
+
+
