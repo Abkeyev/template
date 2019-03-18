@@ -599,14 +599,145 @@ header {
 
 #form {
 	background-color: #fff;
+	color: #062033;
 }
 
 #form > p {
-	font-family: 'Lato'
+	font-family: 'Lato', sans-serif;
 	text-align: center;
-	color: #062033;
 	margin: 50px 0 70px 0;
 	opacity: .8;
 }
+
+.send {
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.address-form {
+	font-family: 'Open Sans', sans-serif;
+	width: 20%;
+}
+
+.address-form > h1 {
+	margin: 0 0 30px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.address-form > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.address-form > ul > li {
+	font-size: 11px;
+	color: #6a737b;
+	margin-bottom: 10px;
+}
+
+.address-form > ul > li:last-child {
+	margin-bottom: 0;
+}
+
+.input-form {
+	width: 60%;
+}
+
+.input-form > h1 {
+	margin: 0 0 35px;
+	font-size: 20px;
+}
+
+::-webkit-input-placeholder {
+	font-family: 'Open Sans', sans-serif;
+  color: rgba(91, 100, 110, .5);
+}
+
+.input-form > form > input:focus,
+.input-form > form > textarea:focus {
+	outline: none;
+}
+
+.input-form > form > input[type=text] {
+	display: inline-block;
+	width: 45%;
+	padding: 0;
+	font-size: 11px;
+	border: none;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 15px;
+	vertical-align: top;
+}
+
+.input-form > form > input[type=text] + input[type=text] {
+	float: right;
+}
+
+.input-form > form > textarea {
+	display: block;
+	width: 100%;
+	font-size: 11px;
+	border: none;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 15px;
+	vertical-align: top;
+	resize: none;
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+
+.input-form > form > div {
+	text-align: right;
+}
+
+.input-form > form > div > input[type=submit] {
+	font-size: 13px;
+	color: black;
+	border: none;
+  background: none;
+  padding: 0;
+  margin-left: 15px;
+  vertical-align: top;
+}
+
+.input-form > form > div > img {
+	display: inline-block;
+	width: 20px;
+	height: 14px;
+}
+
+
+.social-form {
+	width: 10%;
+	padding-top: 10px;
+}
+
+.social-form > ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.social-form > ul > li {
+	margin-bottom: 20px;
+	opacity: .5;
+}
+
+.social-form > ul > li:hover {
+	opacity: 1;
+}
+
+
+.social-form > ul > li:last-child {
+	margin-bottom: 0;
+}
+
+
+
+
 
 
