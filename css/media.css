@@ -1,161 +1,238 @@
 @media (min-width: 320px) and (max-width: 480px) {
+	header {
+		padding: 0 30px;
+		position: fixed;
+		width: 100%;
+		z-index: 5;
+	}
+
 	.menu {
-		display: none;
+		position: absolute;
+		right: -100%;
+		top: 65px;
+		width: 100%;
+		background-color: #000;
 	}
-	.burger-menu {
+
+	.current {
+		border-top: none;
+	}
+
+	.menu > li {
 		display: block;
-		width: 30px;
-		height: 30px;
-		margin-top: 20px;
+		margin-right: 0;
+		text-align: center;
+		height: 80px;
+		line-height: 80px;
+		background-color: rgba(255,255,255,.1);
+		margin-bottom: 5px;
 	}
+
+	.menu > li:last-child {
+		margin-bottom: 0;
+	}
+
+	.menu > li > a {
+		font-size: 18px;
+		text-transform: uppercase;
+    font-weight: bold;
+	}
+
+	.burger-menu {
+		display: inline-block;
+		height: 40px;
+		margin-top: 10px;
+		cursor: pointer;
+	}
+
 	.main-title {
 		margin: 0;
-		padding-top: calc(50vh - 65px - 88px);
+		padding-top: calc(50vh - 88px);
 	}
-	header {
-		padding: 0 20px;
+
+	.main-title > h1 {
+		font-size: 50px;
 	}
-	.steps {
-		flex-direction: column;
-		margin-top: 20px;
+
+	.main-title > h2 {
+		font-size: 35px;
 	}
-	.step {
-		text-align: center;
-		width: 100%;
-	}
-	.step > span {
-		margin: 10px auto;
-		display: block;
-	}
-	.step-text {
-		width: 100%;
-	}
-	.step-text > h1 {
-		font-size: 18px;
-	}
-	.step-text > p {
+
+	.main-title > p {
 		font-size: 14px;
 	}
+
 	#features,
 	#phone,
 	#works,
 	#team,
-	#form,
 	#facts,
+	#form,
 	footer {
 		padding: 30px;
 	}
-	.phone-blocks {
-		display: block;
-	}
-	.phone-block {
-		display: flex;
+
+	.steps {
 		margin-top: 30px;
+		flex-direction: column;
 	}
-	.phone-block > div {
+
+	.step {
+		width: 100%;
 		text-align: center;
 		margin-bottom: 20px;
 	}
+
+	.step:last-child {
+		margin-bottom: 0;
+	}
+
+	.step > span {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	.step-text {
+		width: 100%;
+	}
+
+	.phone-blocks {
+		flex-direction: column;
+	}
+
+	#phone > p {
+		margin-bottom: 20px;
+	}
+
+	.phone-block {
+		margin-top: 0;
+	}
+
+	.phone-block > div {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
 	.phone-block > div:last-child {
 		margin-bottom: 20px;
 	}
+
 	.phone-block > div > img {
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
-	.phone-block > div > div {
-		width: 100%;
-	}
+
 	.phone-block-img > img {
-		width: 50%;
 		display: block;
+		width: 80%;
 		margin: 0 auto;
 	}
 
 	#works > p,
 	#team > p {
+		margin: 20px 0;
 		padding: 0;
-		margin: 20px 0 30px;
 	}
+
+	#works > ul {
+		margin-bottom: 20px;
+	}
+
 	#works > ul > li {
-		padding: 5px 7px;
-		margin-right: 5px;
 		font-size: 12px;
+		padding: 5px 10px;
+		margin-right: 5px;
 		font-weight: normal;
 	}
-	#works > ul {
-		margin-bottom: 25px;
-	}
+
 	.work-items {
 		margin-left: -30px;
 	}
+
 	.work-items > div {
 		width: 50%;
 	}
+
 	.team-members {
 		flex-wrap: wrap;
 	}
+
 	.team-member {
-		width: 45%;
+		width: 48%;
 		margin-bottom: 10px;
 	}
+
 	.numbers {
 		padding: 0;
 		flex-wrap: wrap;
 	}
+
 	.numbers > div {
-		width: 50%;
+		width: 48%;
 		margin-bottom: 20px;
 	}
-	.numbers > div:last-child {
-		margin-bottom: 0;
-	}
+
 	.numbers > div > h1 {
-		margin: 10px 0;
+		font-size: 40px;
+		margin-top: 15px;
 	}
+
 	#form > p {
 		margin: 20px 0;
 	}
+
 	.send {
 		flex-direction: column;
 	}
+
 	.address-form,
 	.input-form,
 	.social-form {
 		width: 100%;
 	}
+
 	.address-form {
 		text-align: center;
 		margin-bottom: 20px;
 	}
-	.address-form > ul > li {
-		font-size: 13px;
+
+	.address-form > h1 {
+		font-size: 16px;
+		margin-bottom: 20px;
 	}
+
+	.address-form > ul > li {
+		font-size: 12px;
+	}
+
+	.social-form {
+		margin-top: 20px;
+	}
+
 	.social-form > ul > li {
 		display: inline-block;
 		width: 19%;
-		margin-bottom: 0;
-		margin-top: 20px;
 	}
+
+	.social-form > ul > li:last-child {
+		margin-right: 0;
+	}
+
+	footer {
+		flex-direction: column;
+	}
+
 	.description,
 	.subscribe,
 	.links {
 		width: 100%;
 		margin-bottom: 20px;
-	}
-	.links {
-		margin-bottom: 0;
-	}
-	footer {
-		flex-direction: column;
 		text-align: center;
 	}
+
 	.subscribe > form {
 		width: 100%;
 	}
-}
-
-@media (min-width: 481px) and (max-width: 1024px) {
-
 }
