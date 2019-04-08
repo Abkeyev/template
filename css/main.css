@@ -829,9 +829,26 @@ footer {
 	font-family: 'OpenSans', sans-serif;
 	font-size: 11px;
 	margin-bottom: 15px;
-	/*line-height: 30px;*/
 }
 
 .burger-menu {
 	display: none;
+}
+
+.to-top {
+	position: fixed;
+	opacity: 0;
+	right: 50px;
+	bottom: 50px;
+	background-color: #000;
+	color: white;
+	padding: 5px 10px;
+	z-index: 4;
+	cursor: pointer;
+	transition: opacity .3s ease-out;
+	text-decoration: none;
+}
+
+.to-top.show {
+	opacity: 1;
 }

@@ -7,22 +7,27 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </head>
 <body>
+	<a href="#main" id="top" class="to-top">To top</a>
 	<section id="main">
 		<header>
 			<div class="logo">
 				<a href="">sarajevo<span>.</span></a>
 				<p><span>|</span>I'm your tag line</p>
 			</div>
-			<img class="burger-menu" src="img/menu.png" alt="">
-			<ul class="menu">
-				<li class="current"><a href="">Home</a></li>
+			<img class="burger-menu" src="img/menu.png" alt="" onClick="showMenu()">
+			<ul id="menu" class="menu">
+				<li class="current"><a href="#main">Home</a></li>
 				<li><a href="#features">Features</a></li>
 				<li><a href="#works">Work</a></li>
 				<li><a href="#team">Team</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#form">Contact</a></li>
 			</ul>
 		</header>
 		<div class="main-title">
@@ -361,7 +366,9 @@
 		</div>
 	</section>
 	<section id="map">
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad5bedd9b87fd2eeb9ebcae8a1b4a45987c7a68b39e99643fcbeaabd691192008&amp;width=100%25&amp;height=185&amp;lang=ru_RU&amp;scroll=true"></script>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad5bedd9b87fd2eeb9ebcae8a1b4a45987c7a68b39e99643fcbeaabd691192008&amp;width=100%25&amp;height=185&amp;lang=ru_RU&amp;scroll=true">
+			
+		</script>
 	</section>
 	<footer>
 		<div class="description">
